@@ -10,7 +10,7 @@ In this project, you can calculate the perimeter and area of ​​three figures
 
 [![Figures](https://www.eluniversal.com.mx/sites/default/files/2021/09/29/juego-calamar-triangulo-cuadrado-circulo.jpg "Figures")](http://www.eluniversal.com.mx/sites/default/files/2021/09/29/juego-calamar-triangulo-cuadrado-circulo.jpg "Figures")
 
-If you want me to add another figure, please email me at this address: vivancosebastian@gmail.com
+If you want me to add another figure, please email me at this address: vivancosebastian218@gmail.com
 
 ### 2. Prices and Discounts
 Here you can calculate the discount of the product you like and you have the option of using a discount ticket. On the page of this project you can find a list with many products, their price and a random discount.
