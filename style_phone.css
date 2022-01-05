@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Manrope', sans-serif;
+}
+body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.background {
+    position: absolute;
+    bottom: -75px;
+    left: -71px;
+    z-index: -1;
+    width: 600px;
+    height: 400px;
+    background-color: #424874;
+    transform: rotate(336deg);
+}
+header {
+    margin-block-start: 45px;
+    width: 100%;
+    text-align: center;
+}
+header h1 {
+    font-weight: bold;
+}
+header p {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+main {
+    position: relative;
+    top: -35px;
+}
+.card {
+    min-height: 250px;
+    background-color: #DCD6F7;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
