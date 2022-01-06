@@ -50,7 +50,6 @@ main {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
 .carousel .carousel-item h2 {
@@ -59,6 +58,31 @@ main {
     letter-spacing: 2px;
 }
 .carousel .carousel-item img {
+    margin: 25px 0;
     width: 90px;
     height: 90px;
+}
+.carousel .carousel-item a {
+    margin-block-start: 20px;
+    padding-block-start: 4px;
+    width: 100px;
+    height: 30px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #424874;
+    border-radius: 100px;
+}
+.carousel .indicators {
+    inset-block-end: -8px;
+}
+footer {
+    position: absolute;
+    bottom: 15px;
+}
+footer a {
+    margin-inline-start: 25px;
+}
+footer a img {
+    width: 70px;
+    height: 55px;
 }
