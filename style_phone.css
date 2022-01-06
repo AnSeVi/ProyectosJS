@@ -24,24 +24,24 @@ body {
     background: linear-gradient(339deg, #424874 0 58%, white 50% 100%);
 }
 header {
-    margin-block-start: 90px;
+    margin-block-start: 6.5rem;
     width: 100%;
     text-align: center;
 }
 header h1 {
     margin-block-end: 25px;
-    font-size: 4.6rem;
+    font-size: 5.2rem;
     font-weight: bold;
 }
 header p {
     margin: 0 auto;
-    width: 75%;
-    font-size: 1.35rem;
+    width: 80%;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 main {
     position: relative;
-    top: 8px;
+    top: 2rem;
 }
 .carousel .carousel-item {
     padding: 0 20px;
@@ -77,10 +77,8 @@ main {
 }
 footer {
     position: absolute;
-    bottom: 15px;
-}
-footer a {
-    margin-inline-start: 25px;
+    inset-block-end: 3rem;
+    inset-inline-start: 4rem;
 }
 footer a img {
     width: 70px;
