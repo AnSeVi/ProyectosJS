@@ -24,7 +24,7 @@ body {
     background: linear-gradient(339deg, #424874 0 58%, white 50% 100%);
 }
 header {
-    margin-block-start: 6.5rem;
+    margin-block-start: 4rem;
     width: 100%;
     text-align: center;
 }
@@ -41,7 +41,7 @@ header p {
 }
 main {
     position: relative;
-    top: 2rem;
+    top: 3.2rem;
 }
 .carousel .carousel-item {
     padding: 0 20px;
@@ -77,8 +77,8 @@ main {
 }
 footer {
     position: absolute;
-    inset-block-end: 3rem;
-    inset-inline-start: 4rem;
+    inset-block-end: 1rem;
+    inset-inline-start: 3rem;
 }
 footer a img {
     width: 70px;
