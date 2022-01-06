@@ -31,7 +31,6 @@ body {
     justify-content: space-evenly;
 }
 header {
-    /* margin-block-start: 4rem; */
     width: 100%;
     text-align: center;
 }
@@ -46,10 +45,6 @@ header p {
     font-size: 1.6rem;
     font-weight: 500;
 }
-/* main {
-    position: relative;
-    top: 3.2rem;
-} */
 .carousel .carousel-item {
     padding: 0 20px;
     min-height: 315px;
@@ -82,11 +77,6 @@ header p {
 .carousel .indicators {
     inset-block-end: -8px;
 }
-/* footer {
-    position: absolute;
-    inset-block-end: 1rem;
-    inset-inline-start: 3rem;
-} */
 footer a {
     margin-inline-start: 3rem;
 }
