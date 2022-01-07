@@ -37,18 +37,33 @@ main {
     display: flex;
 }
 .main__logoContainer {
+    margin-block-end: 10px;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.main__logoContainer a img {
+    width: 70px;
 }
 .main__formContainer {
-    padding-block-start: 3rem;
-    padding-inline-start: 3.3rem;
+    padding: 3rem 0 2rem 3.3rem;
     width: 70%;
     height: 58rem;
     border-top-left-radius: 40px;
     background-color: #424874;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.formContainer__form {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .form__flexContainer {
-    margin-block-end: 20px;
     display: flex;
     align-items: center;
 }
@@ -79,4 +94,19 @@ main {
 .flexContainer__inputDecoration .figures:focus, 
 .flexContainer__inputDecoration .date:focus {
     outline: none;
+}
+.formContainer__buttons {
+    margin-inline-start: 14px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons__button {
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-radius: 100px;
+    color: #424874;
+    background-color: #DCD6F7;
 }
