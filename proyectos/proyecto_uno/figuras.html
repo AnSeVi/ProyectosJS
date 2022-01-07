@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Project</title>
+
+    <!-- Title Icon -->
+    <link rel="shortcut icon" href="https://document-export.canva.com/yQ0mM/DAE0hpyQ0mM/48/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220104T194424Z&X-Amz-Expires=78271&X-Amz-Signature=09163f0f51ebc85e55c63ebf369b82db6bd749504718e4c0f486039ae73f269e&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2005%20Jan%202022%2017%3A28%3A55%20GMT" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="./figuras_phone.css">
+</head>
+<body>
+    <div class="container__Flex">
+        <header>
+            <h1>Figures Calculator</h1>
+            <p>Choose a figure and the data you want to calculate</p>
+        </header>
+        <main>
+            <section class="main__logoContainer">
+                <img src="" alt="">
+            </section>
+            <section class="main__formContainer">
+                <form action="#">
+                    <div class="form__flexContainer">
+                        <label for="figures" class="label--figure">Figure:</label>
+                        <div class="flexContainer__inputDecoration">
+                            <select name="figures" id="figures" class="figures">
+                                <option value="square">Square</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="circle">Circle</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__flexContainer">
+                        <label for="date" class="label--date">Date:</label>
+                        <div class="flexContainer__inputDecoration">
+                            <select name="date" id="date" class="date">
+                                <option value="perimeter">Perimeter</option>
+                                <option value="area">Area</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- Js -->
+    <script src="./figuras.js"></script>
+</body>
+</html>
