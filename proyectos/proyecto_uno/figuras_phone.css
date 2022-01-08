@@ -125,7 +125,7 @@ main {
     outline: none;
 }
 .dataEntry__squareData {
-    display: block;
+    display: none;
 }
 .dataEntry__triangleData {
     display: none;
@@ -134,8 +134,8 @@ main {
     display: none;
 }
 .formContainer__result {
-    margin-block-start: 5rem;
-    margin-block-end: 5rem;
+    margin-block-start: 4rem;
+    margin-block-end: 6rem;
     margin-inline-start: 5.3rem;
     padding-block-start: 3.3px;
     text-align: center;

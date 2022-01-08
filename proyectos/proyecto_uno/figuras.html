@@ -32,13 +32,13 @@
             <section class="main__formContainer">
                 <form action="#">
                     <div class="form__selectContainer"> 
-                        <button class="selectContainer__option option--square">
+                        <button class="selectContainer__option option--square" onclick="squareDataEntry()">
                             <img src="https://cdn-icons-png.flaticon.com/512/2627/2627937.png" alt="Image of a square">
                         </button>
-                        <button class="selectContainer__option option--triangle">
+                        <button class="selectContainer__option option--triangle" onclick="triangleDataEntry()">
                             <img src="https://cdn-icons-png.flaticon.com/512/156/156267.png" alt="Image of a triangle">
                         </button>
-                        <button class="selectContainer__option option--circle">
+                        <button class="selectContainer__option option--circle" onclick="circleDataEntry()">
                             <img src="https://cdn-icons-png.flaticon.com/512/481/481078.png" alt="Image of a circle">
                         </button>
                     </div>
@@ -74,14 +74,14 @@
                         </div>
                     </div>
                     <div id="circleData" class="dataEntry__circleData">
-                        <label for="inputCircle">Side:</label>
+                        <label for="inputCircle">Radius:</label>
                         <div class="dataEntry__inputDecoration">
                             <input id="inputCircle" type="number" placeholder="Ejem. 12">
                         </div>
                     </div>
                 </form>
                 <p id="result" class="formContainer__result"></p>
-                <button id="calculateButton" class="formContainer__button" type="button">Calculate</button>
+                <button id="calculateButton" class="formContainer__button" type="button" onclick="empezarCalculo()">Calculate</button>
             </section>
         </main>
     </div>
