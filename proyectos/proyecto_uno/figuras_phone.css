@@ -97,3 +97,61 @@ main {
 .inputContainer__inputDecoration select:focus {
     outline: none;
 }
+.formContainer__dataEntry {
+    margin-block-start: 10px;
+    padding-inline-end: 20px;
+    height: 25vh;
+}
+.formContainer__dataEntry label {
+    margin-block-end: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+}
+.dataEntry__inputDecoration {
+    margin-block-start: 5px;
+    margin-block-end: 10px;
+    padding: 7.2px 12px 0;
+    width: 100%;
+    height: 30px;
+    border-radius: 100px;
+    background-color: white;
+}
+.dataEntry__inputDecoration input {
+    width: 100%;
+    border: none;
+}
+.dataEntry__inputDecoration input:focus {
+    outline: none;
+}
+.dataEntry__squareData {
+    display: block;
+}
+.dataEntry__triangleData {
+    display: none;
+}
+.dataEntry__circleData {
+    display: none;
+}
+.formContainer__result {
+    margin-block-start: 5rem;
+    margin-block-end: 5rem;
+    margin-inline-start: 5.3rem;
+    padding-block-start: 3.3px;
+    text-align: center;
+    width: 100px;
+    height: 55px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    background-color: #52598f;
+}
+.formContainer__button {
+    margin-inline-start: 5rem;
+    width: 110px;
+    height: 35px;
+    color: #424874;
+    border: none;
+    border-radius: 100px;
+}
