@@ -30,31 +30,28 @@
                 </a>
             </section>
             <section class="main__formContainer">
-                <form action="#" class="formContainer__form">
-                    <div class="form__flexContainer">
-                        <label for="figures" class="label--figure">Figure:</label>
-                        <div class="flexContainer__inputDecoration">
-                            <select name="figures" id="figures" class="figures">
-                                <option value="square">Square</option>
-                                <option value="triangle">Triangle</option>
-                                <option value="circle">Circle</option>
-                            </select>
-                        </div>
+                <form action="#">
+                    <div class="form__selectContainer"> 
+                        <button class="selectContainer__option option--square">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2627/2627937.png" alt="Image of a square">
+                        </button>
+                        <button class="selectContainer__option option--triangle">
+                            <img src="https://cdn-icons-png.flaticon.com/512/156/156267.png" alt="Image of a triangle">
+                        </button>
+                        <button class="selectContainer__option option--circle">
+                            <img src="https://cdn-icons-png.flaticon.com/512/481/481078.png" alt="Image of a circle">
+                        </button>
                     </div>
-                    <div class="form__flexContainer">
-                        <label for="date" class="label--date">Date:</label>
-                        <div class="flexContainer__inputDecoration">
-                            <select name="date" id="date" class="date">
+                    <div class="form__inputContainer">
+                        <label for="">Calculate:</label>
+                        <div class="inputContainer__inputDecoration">
+                            <select name="date" id="date">
                                 <option value="perimeter">Perimeter</option>
                                 <option value="area">Area</option>
                             </select>
                         </div>
                     </div>
                 </form>
-                <div class="formContainer__buttons">
-                    <button type="button" class="buttons__button" id="buttonSubmit">Submit</button>
-                    <button type="button" class="buttons__button" id="buttonCalculate">Calculate</button>
-                </div>
             </section>
         </main>
     </div>

@@ -22,7 +22,7 @@ body {
     justify-content: space-between;
 }
 header {
-    padding-block-start: 5rem;
+    padding-block-start: 4rem;
     padding-inline-start: 3.3rem;
 }
 header h1 {
@@ -48,65 +48,52 @@ main {
     width: 70px;
 }
 .main__formContainer {
-    padding: 3rem 0 2rem 3.3rem;
+    padding: 3rem 0 2rem 3rem;
     width: 70%;
     height: 58rem;
     border-top-left-radius: 40px;
     background-color: #424874;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-.formContainer__form {
-    height: 80px;
+.form__selectContainer {
+    margin-block-end: 20px;
+    padding-inline-end: 23px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
-.form__flexContainer {
+.selectContainer__option {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #DCD6F7;
+}
+.selectContainer__option img {
+    width: 30px;
+}
+.form__inputContainer {
+    margin-inline-end: 22px;
     display: flex;
     align-items: center;
 }
-.form__flexContainer label {
+.form__inputContainer label {
+    margin-inline-end: 5px;
     font-size: 1.2rem;
     font-weight: 500;
     color: white;
 }
-.label--figure {
-    margin-inline-end: 12px;
-}
-.label--date {
-    margin-inline-end: 20px;
-}
-.flexContainer__inputDecoration {
-    padding: 7px 15px 0;
+.inputContainer__inputDecoration {
+    padding: 6px 10px 0;
     width: 70%;
     height: 30px;
     border-radius: 100px;
     background-color: white;
 }
-.flexContainer__inputDecoration .figures, 
-.flexContainer__inputDecoration .date {
+.inputContainer__inputDecoration select {
     width: 100%;
     border: none;
-    background-color: white;
 }
-.flexContainer__inputDecoration .figures:focus, 
-.flexContainer__inputDecoration .date:focus {
+.inputContainer__inputDecoration select:focus {
     outline: none;
-}
-.formContainer__buttons {
-    margin-inline-start: 14px;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.buttons__button {
-    width: 40%;
-    height: 30px;
-    border: none;
-    border-radius: 100px;
-    color: #424874;
-    background-color: #DCD6F7;
 }
