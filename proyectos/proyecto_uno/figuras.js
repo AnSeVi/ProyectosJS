@@ -30,7 +30,7 @@ function areaCuadrado (lado) {
 // Triangulo
 
 function perimetroTriangulo (ladoUno, ladoDos, base) {
-    return parseFloat(ladoUno) + parseFloat(ladoDos) + parseFloat(base);
+    return ladoUno + ladoDos + base;
 };
 function areaTriangulo (base, altura) {
     return (base * altura) / 2;
