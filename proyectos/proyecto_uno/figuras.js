@@ -52,23 +52,28 @@ function areaCirculo (radio) {
 /* ---------- Funcion para Empezar el Calculo ---------- */
 
 function empezarCalculo () {
-    const inputSquare = document.getElementById("inputSquare");
-    const squareValue = parseInt(inputSquare.value);
-    const inputTriangleA = document.getElementById("inputTriangleA");
-    const triangleValueA = parseInt(inputTriangleA.value);
-    const inputTriangleB = document.getElementById("inputTriangleB");
-    const triangleValueB = parseInt(inputTriangleB.value);
-    const inputTriangleBase = document.getElementById("inputTriangleBase");
-    const triangleValueBase = parseInt(inputTriangleBase.value);
-    const inputCircle = document.getElementById("inputCircle");
-    const circleValue = parseInt(inputCircle.value);
+    const inputSquare = document.getElementById("inputSquare"); // Input del CUADRADO
+    const squareValue = parseInt(inputSquare.value); // Sacar el valor que recibio el input del CUADRADO
+    
+    
+    const inputTriangleA = document.getElementById("inputTriangleA"); // Input del lado A del TRIANGULO
+    const triangleValueA = parseInt(inputTriangleA.value); // Sacar el valor del Input de el lado A del TRIANGULO
+    const inputTriangleB = document.getElementById("inputTriangleB"); // Input del lado B del TRIANGULO
+    const triangleValueB = parseInt(inputTriangleB.value); // Sacar el valor del Input de el lado B del TRIANGULO
+    const inputTriangleBase = document.getElementById("inputTriangleBase"); // Input de la base del TRIANGULO
+    const triangleValueBase = parseInt(inputTriangleBase.value); // Sacar el valor del Input de la base del TRIANGULO
+    
+    
+    const inputCircle = document.getElementById("inputCircle"); // Input del CIRCULO
+    const circleValue = parseInt(inputCircle.value); // Sacar el valor que recibio el input del CIRCULO
 
-    const inputSelect = document.getElementById("date");
-    const selectValue = inputSelect.value
+    
+    const inputSelect = document.getElementById("date"); // Input para la SELECCION
+    const selectValue = inputSelect.value; // Sacando el valor de el input de la SELECCION
 
-    let result;
+    let result; // Declarando la variable para el RESULTADO
 
-    if (squareValue.length === 0) {
+    if (squareValue != undefined) { // Condicional que verifica si el CUADRADO se debe calcular o no
         
         if (selectValue === 'perimeter') {
             result = perimetroCuadrado(squareValue);
@@ -76,15 +81,7 @@ function empezarCalculo () {
             result = areaCuadrado(squareValue);
         };
 
-    } else if (circleValue.length === 0) {
-
-        if (selectValue === 'perimeter') {
-            result = perimetroCirculo(circleValue);
-        } else if (selectValue === 'area') {
-            result = areaCirculo(circleValue);
-        };
-
-    } else if (triangleValueA.length === 0) {
+    } else if (triangleValueA != undefined && triangleValueB != undefined && triangleValueBase != undefined) { // Condicional que verifica si el TRIANGULO se debe calcular o no
 
         if (selectValue === 'perimeter') {
             result = perimetroTriangulo(triangleValueA, triangleValueB, triangleValueBase);
@@ -92,8 +89,16 @@ function empezarCalculo () {
             result = areaTriangulo(triangleValueBase, triangleValueA);
         };
 
-    }
+    } else if (circleValue != undefined) { // Condicional que verifica si el CIRCULO se debe calcular o no
 
-    const lineResult = document.getElementById("result");
-    lineResult.innerHTML = result;
+        if (selectValue === 'perimeter') {
+            result = perimetroCirculo(circleValue);
+        } else if (selectValue === 'area') {
+            result = areaCirculo(circleValue);
+        };
+
+    } 
+
+    const lineResult = document.getElementById("result"); // Etiqueta P donde se mostrara el resultado
+    lineResult.innerHTML = result; // Propiedad con la cual escribir el valor de la variable RESULTADO en el HTML
 }
