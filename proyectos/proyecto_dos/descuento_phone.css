@@ -65,6 +65,57 @@ td {
 .item--four {
     border-bottom-right-radius: 20px;
 }
+.main__formContainer {
+    padding: 20px 45px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    padding-block-end: 5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: block;
+}
+.form__inputDecoration {
+    margin-block-end: 20px;
+    padding: 10.3px 15px 0;
+    width: 100%;
+    height: 37px;
+    border-radius: 100px;
+    background-color: #DCD6F7;
+}
+.inputDecoration__input {
+    width: 100%;
+    border: none;
+    background-color: #DCD6F7;
+}
+.inputDecoration__input:focus {
+    outline: none;
+}
+.form__result {
+    margin: 40px auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 120px;
+    font-size: 4rem;
+    font-weight: 600;
+    background-color: #efedfb;
+    border-radius: 10px;
+}
+.form__calculate {
+    margin: 0 auto 30px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    background-color: #424874;
+    color: white;
+    display: block;
+}
+footer a {
+    margin-inline-start: 20px;
+}
 footer a img {
     width: 50px;
 }
