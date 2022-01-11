@@ -75,11 +75,14 @@ form > label {
     border: none;
     background-color: white;
 }
+.inputDecoration__input:focus {
+    outline: none;
+}
 .form__returnLine {
     margin: 55px auto;
     padding: 10px 15px;
     text-align: center;
-    width: 100px; 
+    width: 150px; 
     font-size: 4rem;
     font-weight: 600;
     border-radius: 10px;
