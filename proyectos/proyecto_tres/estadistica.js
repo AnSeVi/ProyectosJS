@@ -8,7 +8,6 @@ function calcularPromedio (lista) {
             return a + b;
         }
     );
-    console.log(sumaLista);
 
     const promedioLista = sumaLista / lista.length;
     
@@ -40,26 +39,37 @@ function calcularMediana (lista) {
 // Formula para Calcular Moda
 
 function calcularModa (list) {
-    let nums = [];
+    let valoresConRepeticion = list.reduce((a, d) => (a[d] ? a[d] += 1 : a[d] = 1, a), {});
+    console.log(valoresConRepeticion);
 
-    for (let i = 0; i < list.length; i++) {
-        let num;
+    let nums = [];
+    let count = 0;
+    let result;
+
+    for (let i = 0; i < list.length; i++){
+        let position = list[i];
+        let status = false;
 
         for (let j = 0; j < nums.length; j++) {
-            if (list[i] === nums[j]) {
-                num = true;
-                break
-            } else {
-                num = false;
+            if (position === nums[j]) {
+                status = true;
+                break;
             };
-        };
+        }
 
-        if (num === false) {
-            nums.push(list[i]);
+        if (status != true) {
+            nums.push(position);
         };
     };
-
     console.log(nums);
+
+    for (let i = 0; i < nums.length; i++) {
+        let num = nums[i];
+        console.log(num);
+        let dic = valoresConRepeticion[num];
+        console.log(dic);
+    
+    };
 };
 
 /* ---------- Funcion para Traer info ---------- */
