@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Project</title>
+
+    <!-- Title Icon -->
+    <link rel="shortcut icon" href="https://document-export.canva.com/yQ0mM/DAE0hpyQ0mM/48/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220104T194424Z&X-Amz-Expires=78271&X-Amz-Signature=09163f0f51ebc85e55c63ebf369b82db6bd749504718e4c0f486039ae73f269e&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2005%20Jan%202022%2017%3A28%3A55%20GMT" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="./estadistica_phone.css">
+</head>
+<body>
+    <div class="flex__container">
+        <header>
+            <h1>Statistic Calculator</h1>
+            <p>In this project, you can calculate the average, median and mode.</p>
+        </header>
+        <main>
+            <form action="#">
+                <div class="form__inputFlex">
+                    <label for="type">Type:</label>
+                    <div class="form__inputDecoration">
+                        <select name="type" id="type" class="inputDecoration__input">
+                            <option value="average">Average</option>
+                            <option value="median">Median</option>
+                            <option value="mode">Mode</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="list">List:</label>
+                <div class="form__inputDecoration">
+                    <input id="list" type="number" class="inputDecoration__input" placeholder="Ejem. 12, 13, 12, 14">
+                </div>
+                <p></p>
+                <button></button>
+            </form>
+        </main>
+        <footer></footer>
+    </div>
+
+    <!-- Js Main -->
+    <script src="./estadistica.html"></script>
+</body>
+</html>
