@@ -40,36 +40,26 @@ function calcularMediana (lista) {
 
 function calcularModa (list) {
     let valoresConRepeticion = list.reduce((a, d) => (a[d] ? a[d] += 1 : a[d] = 1, a), {});
-    console.log(valoresConRepeticion);
 
-    let nums = [];
-    let count = 0;
+    let valorActual;
+    let valorPasado = 0;
+    let valorMayor = 0;
+    let counter = 1;
     let result;
 
-    for (let i = 0; i < list.length; i++){
-        let position = list[i];
-        let status = false;
+    for (let key in valoresConRepeticion) {
+        valorActual = valoresConRepeticion[key];
 
-        for (let j = 0; j < nums.length; j++) {
-            if (position === nums[j]) {
-                status = true;
-                break;
-            };
+        if (valorPasado < valorActual && valorActual > valorMayor) {
+            result = key
+            valorMayor = valorActual
         }
 
-        if (status != true) {
-            nums.push(position);
-        };
-    };
-    console.log(nums);
+        valorPasado = valorActual;
+        counter += 1
+    }
 
-    for (let i = 0; i < nums.length; i++) {
-        let num = nums[i];
-        console.log(num);
-        let dic = valoresConRepeticion[num];
-        console.log(dic);
-    
-    };
+    return result;
 };
 
 /* ---------- Funcion para Traer info ---------- */
