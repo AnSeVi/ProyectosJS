@@ -13,16 +13,22 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+}
+.body__co {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 .background {
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #424874 0 73%, white 0 50%);
+    background: linear-gradient(to top, #424874 0 64%, white 0 50%);
+}
+header {
+    margin: 95px 0;
 }
 header h1 {
     margin-block-end: 5px;
@@ -37,7 +43,7 @@ header p {
     font-weight: 400;
 }
 main {
-    margin: 0 auto;
+    margin: 150px auto 0;
     width: 70%;
     color: white;
 }
@@ -79,16 +85,12 @@ form > label {
     margin: 50px auto;
     padding: 10px 20px;
     text-align: center;
-    width: 120px;
+    width: 220px;
     border-radius: 10px;
     background-color: #484e7e;
 }
-.result--advice {
-    font-size: 1.3rem;
-    font-weight: 300;
-}
 .result--num {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 .form__button {
@@ -99,6 +101,9 @@ form > label {
     color: #424874;
     background-color: #DCD6F7;
     display: block;
+}
+footer {
+    margin-block-start: 25px;
 }
 footer a {
     margin-inline-start: 30px;
